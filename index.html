@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BMI Calculator</title>
+
+	<!-- StyleSheet Linked -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- MediaSheet Linked -->
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<!-- JavaScript Linked -->
+	<script type="text/javascript" src="Script.js"></script>
+
+	<!-- Fontawesome Linked -->
+	<script src="https://kit.fontawesome.com/a656fffa44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="wrapper">
+			<div class="content_main">
+				<img src="img/text_img.jpg" alt="Fitness 3D Image" class="content_img">
+				
+				<div class="content_area">
+					<div class="text_space">
+						<p>BMI<br>Finder</p>
+					</div>
+
+					<div class="line_animate">
+						<div class="line"></div>
+					</div>
+
+					<div class="slogan_space">
+						<p>"Revitalize Your Body, Embrace the Power of Fitness"</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="clculate_area">
+				
+				<div class="calculate_box">
+					<div class="calculate_head">
+						<p>"find here"</p>
+					</div>
+
+					<div class="data">
+						<div class="data_label"><label>type your height in meter.</label><span id="height_error">this field is required*</span></div>
+						<input type="number" id="height_data" name="Height" placeholder="Ex. - 1.28, 1.47, 1.62 Etc..." required>
+					</div>
+
+					<div class="data">
+						<div class="data_label"><label>type your weight in kilogram.</label><span id="weight_error">this field is required*</span></div>
+						<input type="number" id="weight_data" name="Weight" placeholder="Enter Here" required>
+					</div>
+
+					<div class="submit_btn">
+						<button id="calculateBtn">Submit</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		
+
+		<div class="fade" id="fade"></div>
+		
+		<div class="result_card_main" id="result_card_main">
+			<div class="result_card">
+				<div class="card_img" id="card_img">
+					
+				</div>
+
+				<div class="card_content">
+					<div class="result_content">
+						<div class="result_value">
+							<p id="result_value"></p>
+							<p id="result_info" class="result_info"></p>
+						</div>
+
+						<div class="suggest_main">
+							<p id="suggest_text"></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="result_close" onclick="result_hide()">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="creator_info_box">	
+			<img src="img/profile-pic.png" class="profilePic">
+			<p>created by <a href="https://dheerajdev.netlify.app/" target="_blank">dheerajWebDev</a></p>
+		</div>
+
+	</div>
+
+
+<!-- Internal JavaScipt -->
+
+<script type="text/javascript">
+
+	document.getElementById("calculateBtn").addEventListener("click", function()
+	{
+		var height_Input = document.getElementById('height_data');
+		var	weight_Input = document.getElementById('weight_data');
+
+		let height_error = document.getElementById('height_error');
+		let weight_error = document.getElementById('weight_error');
+
+		if (height_Input.value === "" || weight_Input.value === "") 
+		{
+			height_error.style.display = "block";
+			weight_error.style.display = "block";
+		}
+
+		else
+		{
+			calculate();
+			height_error.style.display = "none";
+			weight_error.style.display = "none";
+
+			height_Input.value = "";
+			weight_Input.value = "";
+		}
+	});
+	
+</script>
+
+
+</body>
+</html>

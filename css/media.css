@@ -1,0 +1,282 @@
+/* ------------------ 1200px Responsive ------------------- */
+@media(max-width: 1200px)
+{
+	.container
+	{
+		padding: 50px 80px;
+	}
+
+	.content_main .content_img
+	{
+		width: 250px;
+	}
+
+	.content_area .text_space p
+	{
+		font-size: 80px;
+		line-height: 80px;
+	}
+
+
+	.content_area .line_animate
+	{
+		margin-top: 10px;
+	}
+
+	@keyframes line_animate
+	{
+		50%
+		{
+			transform: translateX(410px);
+		}
+	}
+
+	.content_area .slogan_space p
+	{
+		font-size: 14px;
+		text-transform: capitalize;
+	}
+
+
+
+
+
+
+	.wrapper  .clculate_area::before, .clculate_area::after
+	{
+		width: 100px;
+		height: 100px;
+	}
+
+
+
+	.clculate_area .calculate_box
+	{
+		width: 450px;
+	}
+}
+
+
+
+
+/* ------------------ 1024px Responsive ------------------- */
+
+@media(max-width: 1024px)
+{
+	.container
+	{
+		padding: 50px 40px;
+	}
+
+	.content_main .content_img
+	{
+		width: 200px;
+
+		left: -80px;
+		top: -80px;
+	}
+
+	.content_main .content_area
+	{
+		padding: 20px;
+	}
+
+	.content_area .text_space p
+	{
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+
+	.content_area .line_animate
+	{
+		margin-top: 10px;
+	}
+
+	@keyframes line_animate
+	{
+		0%
+		{
+			transform: translateX(-150px);
+		}
+
+		50%
+		{
+			transform: translateX(310px);
+		}
+
+		100%
+		{
+			transform: translateX(-150px);
+		}
+	}
+
+	.content_area .slogan_space p
+	{
+		font-size: 12px;
+		text-transform: capitalize;
+	}
+
+
+
+
+
+	.clculate_area .calculate_box
+	{
+		width: 350px;
+
+		padding: 20px;
+	}
+
+	.calculate_box .calculate_head p
+	{
+		font-size: 24px;
+	}
+
+	.wrapper  .clculate_area::before, .clculate_area::after
+	{
+		width: 80px;
+		height: 80px;
+	}
+
+	.wrapper  .clculate_area::before
+	{
+		left: -40px;
+		top: -40px;
+	}
+
+	.wrapper  .clculate_area::after
+	{
+		right: -40px;
+		bottom: -40px;
+	}
+
+	.data .data_label label
+	{
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	.data .data_label span
+	{
+		font-size: 10px;
+	}
+
+	.calculate_box .data input
+	{
+		height: 40px;
+
+		margin-top: 5px;
+
+		font-size: 12px;
+	}
+}
+
+
+
+/* ------------------ 768px Responsive ------------------- */
+
+@media(max-width: 768px)
+{
+	.container .wrapper
+	{
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.clculate_area
+	{
+		width: 100%;
+		margin: 40px 0;
+	}
+
+	.content_main .content_area
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+	.clculate_area .calculate_box
+	{
+		width: 100%;
+
+		padding: 20px;
+	}
+}
+
+
+
+/* ------------------ 480px Responsive ------------------- */
+
+@media(max-width: 480px)
+{
+	.container
+	{
+		padding: 10px;
+	}
+
+	.content_area .text_space p
+	{
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.content_area .slogan_space p
+	{
+		font-size: 12px;
+		text-transform: capitalize;
+	}
+
+	.content_main .content_img
+	{
+		width: 150px;
+
+		left: -20px;
+		top: -80px;
+	}
+
+	.data .data_label label
+	{
+		font-size: 10px;
+	}
+
+
+
+
+	.wrapper  .clculate_area::before, .clculate_area::after
+	{
+		filter: blur(5px);
+	}
+
+
+
+
+
+	.container .result_box
+	{
+		padding: 10px;
+	}
+
+	.result_card .card_img
+	{
+		width: 200px;
+	}
+
+	.result_card .card_content
+	{
+		width: 300px;
+		padding: 0 10px 30px;
+	}
+
+	.result_value
+	{
+		margin: 120px auto 10px;
+	}
+
+	.suggest_main p
+	{
+		font-size: 12px;
+	}
+}
